@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Font files -->
+<link rel="stylesheet" href="https://use.typekit.net/dbq1slv.css">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navigation.html %}
+
+    <div class="mainpage">
+      {{ content }}
+    </div>
+
+    <main>
+      <h1>Recent Posts</h1>
+      <div class="catalogue">
+        {% for post in site.posts limit:3 %}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+            <div>
+              <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+              <h1 class="catalogue-title">{{ post.title }}</h1>
+              <div class="catalogue-line"></div>
+
+              <p>
+                {{ post.content | strip_html | truncatewords: 30 }}
+              </p>
+
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>

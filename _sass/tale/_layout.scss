@@ -1,0 +1,247 @@
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 80%;
+}
+
+main,
+footer,
+.nav-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 80%;
+}
+
+.nav {
+  position: relative;
+  box-shadow: 0 2px 7px -2px $shadow-color;
+  overflow: auto;
+
+  &-container {
+    margin: 1rem auto;
+    position: relative;
+    text-align: center;
+  }
+
+  &-title {
+    font-family: $sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $default-color;
+    display: inline-block;
+    margin: 0;
+    padding-right: .2rem;
+    transition: 0.2s;
+    transition-property: all;
+
+    &:hover,
+    &:focus {
+      opacity: .6;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    color: $default-color;
+    display: inline-block;
+    opacity: .6;
+    padding: 0 2rem 0 0;
+    transition: 0.2s;
+    transition-property: all;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  a {
+    color: $default-color;
+    font-family: $sans-serif;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav {
+    &-container {
+      text-align: left;
+    }
+
+    ul {
+      bottom: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+footer {
+  font-family: $serif-secondary;
+  padding: 2rem 0;
+  text-align: center;
+
+  span {
+    color: $default-color;
+    font-size: .8rem;
+  }
+}
+
+.error-message{
+  color: $default-color;
+  text-align: center;
+  font-family: $sans-serif;
+  margin-top: 0.5em;
+  transition: 0.5s;
+  transition-property: opacity;
+  font-size: 8em;
+
+  &:hover{
+    opacity: 0.5;
+  }
+}
+
+.accordion{
+  list-style-type: none;
+
+  &-li{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    transition-property: all;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    box-shadow: 0 0 5px $shadow-color;
+  }
+
+  &-li:hover{
+    box-shadow: 0 0 7px 2px $shadow-color;
+  }
+
+  &-title{
+    display:block;
+    margin:3px 3px 3px 10px;
+    font-family: $sans-serif;
+    transition: 0.3s;
+    transition-property: opacity;
+    font-size: 1.5rem;
+  }
+
+  &-body{
+    font-family: $sans-serif-body;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+.card{
+  &-item{
+    box-shadow: 0 0 7px $shadow-color;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: 0.3s;
+    transition-property: all;
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  &-item:hover{
+    box-shadow: 0 0 10px 2px $shadow-color;
+  }
+
+  &-grid{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &-title{
+    font-family: $sans-serif;
+    font-size: 1.5rem;
+  }
+
+  &-img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &-body{
+    margin-left: 0.5em;
+    margin-bottom: 20px;
+  }
+
+  &-detail{
+    font-family: $sans-serif-body;
+    font-size: 1rem;
+    word-wrap: break-word;
+    padding-bottom: 15px;
+    margin: 0 0.5em 20px 0;
+    padding-left: 15px;
+  }
+}
+
+.hero{
+  &-grid{
+    display: grid;
+    align-content: center;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px;
+  }
+
+  &-image{
+    display: grid;
+    grid-area: 1 / 1 / 2 / 2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-text{
+    display: grid;
+    grid-area: 1 / 1 / 2 / 2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 2px $shadow-color;
+    color: white;
+    font-family: $sans-serif;
+    font-size: 2rem;
+  }
+
+  &-subtext{
+    display: grid;
+    grid-area: 1 / 1 / 2 / 2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 3.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px $shadow-color;
+    color: white;
+    margin-top: 1rem;
+    font-family: $sans-serif-body;
+    font-style: italic;
+    font-size: 1rem;
+  }
+}

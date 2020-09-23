@@ -1,0 +1,39 @@
+# Site settings
+title:          Hojun Yoon
+description:    "My personal blog for posting mathematical things"
+project_name: THAW
+#baseurl:        "/"
+url:            "hojun-y.github.io"
+
+# Google Analytics
+#google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         Hojun Yoon
+  email:        hojun.y.dev@gmail.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate_path: "/posts/:num/"
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
