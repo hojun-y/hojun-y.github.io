@@ -13,5 +13,5 @@ It can solve what happens to the object without conducting any "real" experiment
 At first, I enjoyed tinkering equations and plotting the result. But it became dull. I wanted to visualize mathematical expressions more *aesthetically*. That's why I dived into the field of computer graphics. Currently, I'm devoting most of my time studying calculus and physics.
 
 I hope you enjoy the articles,
-<br>
+<br><br>
 Hojun Yoon.
