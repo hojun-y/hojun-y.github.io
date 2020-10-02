@@ -7,4 +7,11 @@ permalink: /about/
 $$L_O=L_e+\int_\Omega f_r \cdot L_i \cdot \cos \theta_i \; d\omega_i$$
 </h2>
 
-Hello! I'm Hojun Yoon, 
+
+When I first started mathematics(especially vector calculus), I was fascinated with its versatility.
+It can solve what happens to the object without conducting any "real" experiments like how a material deforms over time.
+At first, I enjoyed tinkering equations and plotting the result. But it became dull. I wanted to visualize mathematical expressions more *aesthetically*. That's why I dived into the field of computer graphics. Currently, I'm devoting most of my time studying calculus and physics.
+
+I hope you enjoy the articles,
+<br>
+Hojun Yoon.
