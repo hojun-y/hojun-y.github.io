@@ -249,3 +249,35 @@ footer {
     font-size: 1rem;
   }
 }
+
+table{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+td, th{
+  border: 1px solid $shadow-color;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+figure{
+  display: flex;
+  flex-flow: column;
+}
+
+figcaption{
+  font-family: $sans-serif-body;
+  font-size: 0.7rem;
+  padding: 0 auto 3px;
+  text-align: center;
+}
+
+#rendered-image{
+  margin-bottom: 1.5rem;
+}
