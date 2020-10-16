@@ -1,6 +1,6 @@
 # Site settings
 title:          Hojun Yoon
-description:    "My personal blog for posting mathematical things"
+description:    "My blog for posting mathematical things"
 project_name: THAW
 #baseurl:        "/"
 url:            "hojun-y.github.io"
